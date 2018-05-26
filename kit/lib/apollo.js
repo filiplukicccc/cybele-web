@@ -45,7 +45,7 @@ export function browserClient() {
   // const uri = config.graphQLServer
   //   ? `${getServerURL()}${config.graphQLEndpoint}` : config.graphQLEndpoint;
 
-  const uri = 'https://cybeletechnologies.ml:4010/graphql';
+  const uri = 'http://cybeletechnologies.ml:4010/graphql';
 
   return createClient({
     networkInterface: getNetworkInterface(uri),
