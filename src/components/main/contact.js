@@ -66,7 +66,7 @@ class Contact extends Component {
         text: this.state.text,
         subject: this.state.subject
       }
-      await fetch('http://localhost:8081/sendMail', {
+      await fetch('http://cybeletechnologies.ml:4010/sendMail', {
         body: JSON.stringify(data),
         headers: {
           'content-type': 'application/json'
