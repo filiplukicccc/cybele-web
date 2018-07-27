@@ -97,7 +97,7 @@ class Contact extends Component {
     let errorMsg = this.state.valMsg ? "block" : "none"
     console.log("STATE", this.state)
     return (
-      <div className={css.aboutUs} style={{ paddingBottom: "20px" }}>
+      <div className={css.aboutUs} style={{ paddingBottom: "20px",overflow:'hidden' }}>
         <div>
           <TransitionablePortal
             closeOnTriggerClick
@@ -135,24 +135,24 @@ class Contact extends Component {
                   ({ isVisible }) => isVisible ?
                     <StyleRoot>
                       <div style={styles.rotateInUpLeft}>
-                        <div className={style.contact}>
+                        {/* <div className={style.contact}>
                           <div className={style.contactDiv}>
                             <span style={{ color: '#003571' }}>CALL US</span><br />
                             <span style={{ color: '#414a4c' }}>+381652225536</span>
                           </div>
                           <Icon name='call square' size='big' className={css.iconWhite} />
-                        </div>
+                        </div> */}
                         <div className={style.contact}>
                           <div className={style.contactDiv}>
                             <span style={{ color: '#003571' }}>ADDRESS</span><br />
-                            <span style={{ color: '#414a4c' }}>Jocina Ada 31a, Belgrade-Serbia</span>
+                            <span style={{ color: '#414a4c' }}>REVES Technologies AG Sonnmattstrasse 2 9430<br /> St.Margarethen SG Switzerland</span>
                           </div>
                           <Icon name='location arrow' size='big' className={css.iconWhite} />
                         </div>
                         <div className={style.contact}>
                           <div className={style.contactDiv} >
                             <span style={{ color: '#003571' }}>SAY HELLO </span><br />
-                            <span style={{ color: '#414a4c' }}>office@cybeletechnologies.com</span>
+                            <span style={{ color: '#414a4c' }}>info@revesgroup.com</span>
                           </div>
                           <Icon name='mail' size='big' className={css.iconWhite} />
                         </div>

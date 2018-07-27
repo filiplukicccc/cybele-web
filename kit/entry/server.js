@@ -262,7 +262,7 @@ const router = (new KoaRouter())
     
     const mailOptions = {
       from:ctx.request.body.email,
-      to: "office@cybeletechnologies.com",
+      to: "info@revesgroup.com",
       subject: `Subject: ${ctx.request.body.subject}`,
       text:`
         ${ctx.request.body.text}
