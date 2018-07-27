@@ -19,7 +19,7 @@ import { Icon } from 'semantic-ui-react'
 import CountUp from 'react-countup'
 import TrackVisibility from 'react-on-screen';
 import { flipInY, fadeIn, zoomIn } from 'react-animations';
-import Radium, {StyleRoot} from 'radium';
+import Radium, { StyleRoot } from 'radium';
 import idea from '../../video/boobs.jpg'
 import { Parallax } from 'react-parallax'
 
@@ -45,27 +45,27 @@ const styles = {
 class Clients extends Component {
   render() {
     return (
-      <div className={css.aboutUs} style={{paddingBottom:'0px'}}>
-       <TrackVisibility once throttleInterval={100}>
-            {
-              ({ isVisible }) => isVisible ?
-        <StyleRoot>
-          <div style={styles.flipInY}>
-            <h2>O U R  &nbsp;<span> C L I E N T S</span></h2>
-            <p style={{ textAlign: 'center' }}>Meet our clients</p>
-            <div style={{ textAlign: 'center', paddingTop: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '50px' }}>
-              <span className={css.border}></span>
-              <span style={{ width: '8px', height: '8px', background: '#f0d389', display: 'inline-block', borderRadius: '50%', margin: '0 20px' }}></span>
-              <span className={css.border}></span>
-            </div>
-          </div>
-        </StyleRoot> : ''
-            }
-      </TrackVisibility>
-      <Parallax bgImage={idea} strength={-100}>
-        <Grid style={{margin:'0px'}} className={style.clientsDiv}>
-          <Grid.Row  centered>
-            <Grid.Column computer={2}  tablet={3} mobile={14}>
+      <div className={css.aboutUs} style={{ paddingBottom: '0px' }}>
+        <TrackVisibility once throttleInterval={100}>
+          {
+            ({ isVisible }) => isVisible ?
+              <StyleRoot>
+                <div style={styles.flipInY}>
+                  <h2>O U R  &nbsp;<span> C L I E N T S</span></h2>
+                  <p style={{ textAlign: 'center' }}>Meet our clients</p>
+                  <div style={{ textAlign: 'center', paddingTop: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <span className={css.border}></span>
+                    <span style={{ width: '8px', height: '8px', background: '#003571', display: 'inline-block', borderRadius: '50%', margin: '0 20px' }}></span>
+                    <span className={css.border}></span>
+                  </div>
+                </div>
+              </StyleRoot> : ''
+          }
+        </TrackVisibility>
+        {/* <Parallax bgImage={idea} strength={-100}> */}
+        <Grid style={{ margin: '0px' }} className={style.clientsDiv}>
+          <Grid.Row centered>
+            <Grid.Column computer={2} tablet={3} mobile={14}>
               <TrackVisibility once throttleInterval={300}>
                 {
                   ({ isVisible }) => isVisible ?
@@ -130,35 +130,35 @@ class Clients extends Component {
                 }
               </TrackVisibility>
             </Grid.Column>
-            
-                      <Grid style={{ margin:'0px',minHeight:'200px'}}>
-                        <Grid.Row centered>
-                          <Grid.Column computer={10} mobile={14}>
-                          <TrackVisibility once throttleInterval={1000}>
-              {
-                ({ isVisible }) => isVisible ?
-                  <StyleRoot>
-                    <div style={styles.fadeIn}>
-                            <div style={{ textAlign: "center", color: "#161e25",borderTop:"1px solid #161e25",borderBottom:"1px solid #161e25",marginBottom:"55px",marginTop:"30px" }}><p style={{marginTop:"30px",marginBottom:"30px"}}>Our client list speaks for itself. Since our earliest days, our clients list range from start-ups to large companies with that same approach and dedication at the core of every engagement. Our services are appreciated because  our strong technology skills and the capability to translate customer idea into  technology and  sector specific applications. </p></div>
-                            </div>
-                  </StyleRoot> : ''
-            }
-          </TrackVisibility>
-                          </Grid.Column>
-                        </Grid.Row>
-                      </Grid>
-                    
+
+            <Grid style={{ margin: '0px', minHeight: '200px' }}>
+              <Grid.Row centered>
+                <Grid.Column computer={10} mobile={14}>
+                  <TrackVisibility once throttleInterval={1000}>
+                    {
+                      ({ isVisible }) => isVisible ?
+                        <StyleRoot>
+                          <div style={styles.fadeIn}>
+                            <div style={{ textAlign: "center", color: "#161e25", borderTop: "1px solid #003571", borderBottom: "1px solid #003571", marginBottom: "55px", marginTop: "30px" }}><p style={{ marginTop: "30px", marginBottom: "30px", color: '#414a4c' }}>Our client list speaks for itself. Since our earliest days, our clients list range from start-ups to large companies with that same approach and dedication at the core of every engagement. Our services are appreciated because  our strong technology skills and the capability to translate customer idea into  technology and  sector specific applications. </p></div>
+                          </div>
+                        </StyleRoot> : ''
+                    }
+                  </TrackVisibility>
+                </Grid.Column>
+              </Grid.Row>
+            </Grid>
+
           </Grid.Row>
-          </Grid>
-          </Parallax>
-          <div style={{minHeight:'400px'}}>
+        </Grid>
+        {/* </Parallax> */}
+        <div style={{ minHeight: '400px' }}>
           <TrackVisibility once throttleInterval={1000}>
-              {
-                ({ isVisible }) => isVisible ?
-                  <StyleRoot>
-                    <div style={styles.zoomIn} >
-                      <Grid style={{margin:'0px'}}>
-                        <Grid.Row centered style={{ padding: "0px", backgroundColor: "#161e25", justifyContent: "centered" }}>
+            {
+              ({ isVisible }) => isVisible ?
+                <StyleRoot>
+                  <div style={styles.zoomIn} >
+                    <Grid style={{ margin: '0px' }}>
+                      <Grid.Row centered style={{ padding: "0px", backgroundColor: "#161e25", justifyContent: "centered" }}>
                         <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
                           <div className={style.imgZoom}>
                             <img className={style.imgZepter + " " + style.logos} src={zepter} />
@@ -170,13 +170,13 @@ class Clients extends Component {
                           </div>
                         </Grid.Column>
                         <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
-                          <div className={style.imgZoom }>
+                          <div className={style.imgZoom}>
                             <img className={style.logos} src={galenika} />
                           </div>
                         </Grid.Column>
                         <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
                           <div className={style.imgZoom}>
-                            <img  className={style.logos + " " + style.imgHilton} src={hilton} />
+                            <img className={style.logos + " " + style.imgHilton} src={hilton} />
                           </div>
                         </Grid.Column>
                         <Grid.Column computer={2} tablet={6} mobile={12} className={css.gridColumns}>
@@ -191,27 +191,27 @@ class Clients extends Component {
                         </Grid.Column>
                         <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
                           <div className={style.imgZoom}>
-                            <img  className={style.logos} src={gecko} />
+                            <img className={style.logos} src={gecko} />
                           </div>
                         </Grid.Column>
                         <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
                           <div className={style.imgZoom}>
-                            <img  className={style.logos} src={avanglion} />
+                            <img className={style.logos} src={avanglion} />
                           </div>
                         </Grid.Column>
-                      <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
+                        <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
                           <div className={style.imgZoom}>
-                            <img  className={style.logos} src={tritacke} />
+                            <img className={style.logos} src={tritacke} />
                           </div>
                         </Grid.Column >
                         <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
                           <div className={style.imgZoom}>
-                            <img  className={style.logos} src={optiplaza} />
+                            <img className={style.logos} src={optiplaza} />
                           </div>
                         </Grid.Column >
                         <Grid.Column computer={3} tablet={6} mobile={12} className={css.gridColumns}>
                           <div className={style.imgZoom}>
-                            <img  className={style.logos + " " + style.imgKodDace} src={koddace} />
+                            <img className={style.logos + " " + style.imgKodDace} src={koddace} />
                           </div>
                         </Grid.Column >
                       </Grid.Row>

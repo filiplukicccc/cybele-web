@@ -10,10 +10,10 @@ class LoaderCom extends Component {
   render(){
     return(
       <div>
-        <div style={{height:'100vh',background:'#161e25',display:'flex',justifyContent:'center',alignItems:'center'}}>
+        <div style={{height:'100vh',background:'white',display:'flex',justifyContent:'center',alignItems:'center'}}>
           {/* <Loader size='huge' active inline='centered' /> */}
           {/* <Loader type="ball-rotate" active={true} /> */}
-          <BubbleLoader size={7} style={{color: '#f0d389'}} />
+          <BubbleLoader size={7} style={{color: '#003571'}} />
         </div>
       </div>
     )

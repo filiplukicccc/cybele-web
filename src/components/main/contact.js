@@ -72,7 +72,7 @@ class Contact extends Component {
           'content-type': 'application/json'
         },
         method: 'POST'
-      }).then((response)=>response.text())
+      }).then((response) => response.text())
         .then((responseText) => {
           let res = JSON.parse(responseText)
           if (res.success == true) {
@@ -120,7 +120,7 @@ class Contact extends Component {
                   <p style={{ textAlign: 'center' }}>We'd love to hear your feedback.</p>
                   <div style={{ textAlign: 'center', paddingTop: '15px', display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '50px' }}>
                     <span className={css.border}></span>
-                    <span style={{ width: '8px', height: '8px', background: '#f0d389', display: 'inline-block', borderRadius: '50%', margin: '0 20px' }}></span>
+                    <span style={{ width: '8px', height: '8px', background: '#003571', display: 'inline-block', borderRadius: '50%', margin: '0 20px' }}></span>
                     <span className={css.border}></span>
                   </div>
                 </div>
@@ -137,22 +137,22 @@ class Contact extends Component {
                       <div style={styles.rotateInUpLeft}>
                         <div className={style.contact}>
                           <div className={style.contactDiv}>
-                            <span style={{ color: '#f0d389' }}>CALL US</span><br />
-                            <span>+381652225536</span>
+                            <span style={{ color: '#003571' }}>CALL US</span><br />
+                            <span style={{ color: '#414a4c' }}>+381652225536</span>
                           </div>
                           <Icon name='call square' size='big' className={css.iconWhite} />
                         </div>
                         <div className={style.contact}>
                           <div className={style.contactDiv}>
-                            <span style={{ color: '#f0d389' }}>ADDRESS</span><br />
-                            <span>Jocina Ada 31a, Belgrade-Serbia</span>
+                            <span style={{ color: '#003571' }}>ADDRESS</span><br />
+                            <span style={{ color: '#414a4c' }}>Jocina Ada 31a, Belgrade-Serbia</span>
                           </div>
                           <Icon name='location arrow' size='big' className={css.iconWhite} />
                         </div>
                         <div className={style.contact}>
                           <div className={style.contactDiv} >
-                            <span style={{ color: '#f0d389' }}>SAY HELLO </span><br />
-                            <span>office@cybeletechnologies.com</span>
+                            <span style={{ color: '#003571' }}>SAY HELLO </span><br />
+                            <span style={{ color: '#414a4c' }}>office@cybeletechnologies.com</span>
                           </div>
                           <Icon name='mail' size='big' className={css.iconWhite} />
                         </div>
@@ -178,7 +178,7 @@ class Contact extends Component {
                           <p style={{ display: errorMsg, color: "#db2b2b", letterSpacing: "1px" }}> *** Must fill out all fields!</p>
                         </div>
                         <div>
-                          <Button onClick={this.sendMail} className={style.sendButton} inverted>Send</Button>
+                          <Button onClick={this.sendMail} className={style.sendButton} >Send</Button>
                         </div>
                       </div>
                     </StyleRoot> : ''
@@ -188,7 +188,7 @@ class Contact extends Component {
           </Grid.Row>
         </Grid>
         <div>
-          <p style={{ marginTop: "80px", textAlign: "center",fontSize:'14px' }}>© Cybele Technologies 2017 | All right reserved</p>
+          <p style={{ marginTop: "80px", textAlign: "center", fontSize: '14px', color: '#003571' }}>© Reves Technologies 2018 | All right reserved</p>
         </div>
       </div>
     )

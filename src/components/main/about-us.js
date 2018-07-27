@@ -38,18 +38,18 @@ class AboutUs extends Component {
   render(){
     // const { animation, duration, visible } = this.state
     return(
-      <div className={css.aboutUs} // onMouseEnter={this.toggleVisibility}
+      <div className={css.aboutUs + " " + css.aboutDiv} // onMouseEnter={this.toggleVisibility}
       >
       <TrackVisibility once throttleInterval={100}>
             {
               ({ isVisible }) => isVisible ?
       <StyleRoot>
         <div style={styles.zoomIn}>
-        <h2>A B O U T &nbsp;<span> C Y B E L E</span></h2>
+        <h2>A B O U T &nbsp;<span> R E V E S </span></h2>
         <p style={{textAlign:'center'}}>First you should know</p>
           <div style={{textAlign:'center',paddingTop:'15px',display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'50px'}}>
             <span className={css.border}></span>
-            <span style={{width:'8px',height:'8px',background:'#f0d389',display:'inline-block',borderRadius:'50%',margin:'0 20px'}}></span>
+            <span style={{width:'8px',height:'8px',background:'#003571',display:'inline-block',borderRadius:'50%',margin:'0 20px'}}></span>
             <span className={css.border}></span>
           </div>
         </div>
@@ -64,7 +64,7 @@ class AboutUs extends Component {
               ({ isVisible }) => isVisible ?
               <StyleRoot>
               <div style={styles.fadeInLeft}>
-                <h3><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}></span> Who we are</h3>
+                <h3 style={{color:'#003571'}}><span style={{height:'20px',background:'#003571',display:'inline-block',width:'2px'}}></span> Who we are</h3>
                 <p>We were established in April 2017 with desire to offer our customers the best possible services. We are a young company which, thanks to our highly competent personnel and immense enthusiasm, is in the position to meet all your expectations!</p>
               </div>
               </StyleRoot> : ''
@@ -78,10 +78,10 @@ class AboutUs extends Component {
                 ({ isVisible }) => isVisible ?
               <StyleRoot>
                 <div style={styles.fadeInRight}>
-                  <h3 className={css.mission}><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}></span> Our mission</h3>
+                  <h3 style={{color:'#003571'}} className={css.mission}><span style={{height:'20px',background:'#003571',display:'inline-block',width:'2px'}}></span> Our mission</h3>
                   <p>Let’s grow together! We are constantly following the trends in the dynamic world of information technologies in order to provide our customers with the best service and that is exactly what distinguishes us from others.</p>
-                  <h3><span style={{height:'20px',background:'#f0d389',display:'inline-block',width:'2px'}}>&nbsp;</span> Our vision</h3>
-                  <p>Cybele is going to rise over Silicon Valley and conquer (not divide) like we are supposed to. 2020 Our vision is becoming reality.</p>
+                  <h3 style={{color:'#003571'}}><span style={{height:'20px',background:'#003571',display:'inline-block',width:'2px'}}>&nbsp;</span> Our vision</h3>
+                  <p>Reves is going to rise over Silicon Valley and conquer (not divide) like we are supposed to. 2020 Our vision is becoming reality.</p>
                 </div>
                 </StyleRoot> : ''
               }

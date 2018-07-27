@@ -32,7 +32,7 @@ class Header extends Component {
                 <Link to="/people"><Menu.Item name='PEOPLE' /></Link>
                 <Link to="/contact"><Menu.Item name='CONTACT' /></Link>
               </Menu> */}
-                <Menu style={{outline: 'none',border: 'none',float:'right'}} inverted pointing secondary>
+                <Menu style={{outline: 'none',border: 'none',float:'right',color:'#003571'}} pointing secondary>
                   <a href='#home'><Menu.Item name='HOME' /></a>
                   <a href='#about-us'><Menu.Item name='ABOUT US' /></a>
                   <a href='#services'><Menu.Item name='SERVICES' /></a>
@@ -50,12 +50,12 @@ class Header extends Component {
             width={30}
             height={25}
             strokeWidth={3}
-            color='#f0d389'
+            color='#003571'
             animationDuration={0.5}
           />
           </div>
           <div className={style.hamMenuDiv} style={{display:display}}>
-          <Menu className={style.hamMenu} inverted pointing secondary>
+          <Menu className={style.hamMenu} pointing secondary>
             <a href='#home'><Menu.Item name='HOME' /></a>
             <a href='#about-us'><Menu.Item name='ABOUT US' /></a>
             <a href='#services'><Menu.Item name='SERVICES' /></a>

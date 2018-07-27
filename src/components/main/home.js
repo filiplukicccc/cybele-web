@@ -61,13 +61,13 @@ class Home extends Component {
               <ScrollableAnchor id={'clients'}>
                 <Clients />
               </ScrollableAnchor>
+              <ScrollableAnchor id={'people'}>
+                <People />
+              </ScrollableAnchor>
               <ScrollableAnchor id={'count'}>
                 <Parallax>
                   <Count />
                 </Parallax>
-              </ScrollableAnchor>
-              <ScrollableAnchor id={'people'}>
-                <People />
               </ScrollableAnchor>
               <ScrollableAnchor id={'contact'}>
                 <Contact />

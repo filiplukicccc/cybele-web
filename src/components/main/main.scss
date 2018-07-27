@@ -19,17 +19,17 @@ html, body {
 }
 .homeDiv {
   position: absolute;
-  top: 32%;
-  right: 50%;
-  transform: translate(50%,50%);
+  // top: 32%;
+  // right: 50%;
+  // transform: translate(50%,50%);
   width: 90%;
   text-align: center;
 }
-.videoHome {
-  height: 1100px;
-}
+// .videoHome {
+//   height: 1100px;
+// }
 .videoDiv{
-  height: 1100px;
+  height: 900px;
 }
 .welcome {
   color: white;
@@ -39,9 +39,11 @@ html, body {
 }
 .aboutUs {
   width: 100%;
-  background: #161e25;
-  color: #FFF;
+  background: white;
+  // color: rgba(0,0,0,0.72);
+  color: #414a4c;
   padding: 60px 0px 100px 0px;
+  position: relative;
 }
 .services {
   color: #fff;
@@ -61,7 +63,10 @@ html, body {
   font-size: 16px;
 }
 h1 span, .aboutUs h2 span {
-  color: #f0d389;
+  color: #003571;
+}
+.aboutDiv {
+  margin-top: 900px;
 }
 .homeDiv p {
   color: #FFF;
@@ -69,29 +74,40 @@ h1 span, .aboutUs h2 span {
   text-align-last: center;
 }
 .border {
-  border-bottom: 1px solid #FFF;
+  border-bottom: 1px solid #b0b0b0;
   display: inline-block;
   width: 15%;
 }
+.borderS {
+  border-bottom: 1px solid white;
+  display: inline-block;
+  width: 15%;
+}
+.logoo {
+  width: 240px;
+}
 .icon {
   font-family: Icons !important;
-  color: #f0d389;
+  color: white;
 }
 .iconGrey{
   font-family: Icons !important;
   color: #161e25;
   margin-bottom: 20px !important;
 }
+.icon1 {
+  color: #003571;
+}
 .iconWhite{
   font-family: Icons !important;
-  color: #f0d389;
+  color: #003571;
   margin-bottom: 20px !important;
 }
 
 .iconDiv {
   width: 100px;
   height: 100px;
-  border: 2px solid white;
+  border: 1px solid #003571;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -111,7 +127,7 @@ h1 span, .aboutUs h2 span {
   text-align: center;
 }
 .iconGreyDiv p {
-  color:#161e25;
+  color:#003571;
 }
 .iconGreyDiv:hover  {
   .iconGrey {
@@ -121,7 +137,7 @@ h1 span, .aboutUs h2 span {
   }
 }
 .iconDiv:hover  {
-  background: #f0d389;
+  background: white;
   .icon {
     color: #161e25;
     animation: in 1.5s infinite;
@@ -165,6 +181,9 @@ h1 span, .aboutUs h2 span {
   top: 0px;
   left: 0px;
   transition-duration: 0.8s;
+  border-top: 1px solid #003571;
+  border-left: 1px solid #003571;
+  border-bottom: 1px solid #003571;
 }
 .hoverDivSec {
   position: absolute;
@@ -172,7 +191,7 @@ h1 span, .aboutUs h2 span {
   height: 100%;
   top: 0px;
   left: 0px;
-  background-color: rgba(240,211,137,0.4);
+  background-color: rgba(0,53,113,0.55);
 }
 .name {
   text-align: center;
@@ -183,7 +202,7 @@ h1 span, .aboutUs h2 span {
 }
 .profession {
   text-align: center;
-  color: #f0d389;
+  color: #003571;  
   font-size: 15px;
 }
 // .slika2 {
@@ -271,6 +290,9 @@ h1 span, .aboutUs h2 span {
   background-size: cover;
   width: 275px;
   height: 413px;
+  -webkit-box-shadow: -1px -2px 10px 2px rgba(0,53,113,0.68);
+  -moz-box-shadow: -1px -2px 10px 2px rgba(0,53,113,0.68);
+  box-shadow: -1px -2px 10px 2px rgba(0,53,113,0.68);
 }
 .inPic:hover {
   .hoverDiv {
@@ -291,6 +313,9 @@ h1 span, .aboutUs h2 span {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
+}
+.arrows  {
+  font-family: none!important;
 }
 .buttons, .buttons1, .buttons2, .buttons3 {
   display: flex;
@@ -319,7 +344,7 @@ h1 span, .aboutUs h2 span {
 }
 @media only screen and (max-width: 1441px) {
   .homeDiv {
-    top: 26%;
+    // top: 26%;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -357,8 +382,17 @@ h1 span, .aboutUs h2 span {
   .videoHome {
     display: none;
   }
+  // .videoDiv{
+  //   height: 700px;
+  // }
+  .logoo {
+    width: 150px;
+  }
   .videoDiv{
-    height: 700px;
+    height: 600px;
+  }
+  .aboutDiv {
+    margin-top: 600px;
   }
   .container {
     width: 305px;
@@ -370,7 +404,7 @@ h1 span, .aboutUs h2 span {
     display: flex;
   }
   .homeDiv {
-    top: 14%;
+    // top: 14%;
   }
   .iconGreyDiv {
     margin-bottom: 20px;
