@@ -17,6 +17,7 @@ const Html = ({ helmet, scripts, window, css, children }) => (
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta httpEquiv="Content-Language" content="en" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="google-site-verification" content="UCc8EWeMEjjoiC0vBWPO0CjqxHZTJV9MHkabJ-TNa0k" />
       {helmet.meta.toComponent()}
       {helmet.base.toString() ? helmet.base.toComponent() : <base href="/" />}
       <link rel="stylesheet" href={css} />
