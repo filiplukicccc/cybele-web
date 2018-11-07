@@ -45,7 +45,7 @@ class AboutUs extends Component {
               ({ isVisible }) => isVisible ?
       <StyleRoot>
         <div style={styles.zoomIn}>
-        <h2>A B O U T &nbsp;<span> R E V E S </span></h2>
+        <h2>A B O U T &nbsp; <span> R E V E S </span></h2>
         <p style={{textAlign:'center'}}>First you should know</p>
           <div style={{textAlign:'center',paddingTop:'15px',display:'flex',justifyContent:'center',alignItems:'center',marginBottom:'50px'}}>
             <span className={css.border}></span>
